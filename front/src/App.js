@@ -5,6 +5,7 @@ import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import DirectorAccount from './Components/DirectorAccount'
+import Metrics from './Components/Metrics'
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route exact path="/register" component={Register}/>
       <Route exact path="/directoraccount" component={DirectorAccount}/>
+      <Route exact path="/metrics" component={Metrics}/>
+
 
     </div>
     {/* <Tabla/> */}

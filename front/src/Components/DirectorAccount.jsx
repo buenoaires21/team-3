@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FiCheck } from "react-icons/fi";
 import { BiWorld, BiBriefcase, BiBarChartAlt } from "react-icons/bi";
 import Tabla from './Tabla'
-import Metrics from './Metrics'
+
 
 const DirectorAccount = () => {
 
@@ -44,10 +44,10 @@ const DirectorAccount = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <Link to='metrics'>
                                     <BiBarChartAlt />
                                     <p>Metricas</p>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -55,7 +55,7 @@ const DirectorAccount = () => {
                 <div className="main-panel" >
 
                 <Tabla/>
-                <Metrics/>
+
 
                 </div>
             </div>
