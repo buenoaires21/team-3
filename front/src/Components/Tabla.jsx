@@ -6,57 +6,66 @@ const Tabla = () => {
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Class</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
+                        <th scope="col">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                />
+                            </div>
+                        </th>
+                        <th scope="col">Lorem</th>
+                        <th scope="col">Ipsum</th>
+                        <th scope="col">Dolor</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">Default</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
+                        <th scope="row">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                />
+                            </div>
+                        </th>
+                        <td>Sit</td>
+                        <td>Amet</td>
+                        <td>Consectetur</td>
                     </tr>
-
-                    <tr class="table-primary">
-                        <th scope="row">Primary</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
+                    <tr>
+                        <th scope="row">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                />
+                            </div>
+                        </th>
+                        <td>Adipisicing</td>
+                        <td>Elit</td>
+                        <td>Sint</td>
                     </tr>
-                    <tr class="table-secondary">
-                        <th scope="row">Secondary</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr class="table-success">
-                        <th scope="row">Success</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr class="table-danger">
-                        <th scope="row">Danger</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr class="table-warning">
-                        <th scope="row">Warning</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr class="table-info">
-                        <th scope="row">Info</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr class="table-light">
-                        <th scope="row">Light</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                    </tr>
-                    <tr class="table-dark">
-                        <th scope="row">Dark</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
+                    <tr>
+                        <th scope="row">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                />
+                            </div>
+                        </th>
+                        <td>Hic</td>
+                        <td>Fugiat</td>
+                        <td>Temporibus</td>
                     </tr>
                 </tbody>
             </table>
