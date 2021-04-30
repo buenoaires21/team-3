@@ -11,6 +11,9 @@ code {
 
 }
 
+.font-page{
+  font-family: 'Karla', sans-serif;
+}
 .navbar{
   font-family: 'Karla', sans-serif;
 }
@@ -20,6 +23,7 @@ code {
 .home{
   font-family: 'Karla', sans-serif;
 }
+
 
 .margin-top-footer{
   margin-top: 32%;
@@ -38,3 +42,4 @@ code {
   width: 100%;
   height: 40px;
 }
+

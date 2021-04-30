@@ -3,16 +3,20 @@ import { Link } from 'react-router-dom'
 
 
 const Register = () => {
-    const [nombre, setNombre] = useState('');
-    const [apellido, setApellido] = useState('')
     const [mail, setMail] = useState('')
+    const [password, setPassword] = useState(0)
+    const [name, setName] = useState('');
+    const [lastName, setLastName] = useState('')
     const [dni, setDni] = useState(0)
     const [cuil, setCuil] = useState(0);
-    const [cbu, setCbu] = useState(0);
-    /*   const [cbu, setCbu] = useState (0)
-      const [cbu, setCbu] = useState (0)
-      const [cbu, setCbu] = useState (0)
-      const [cbu, setCbu] = useState (0) */
+    const [bankName, setBankName] = useState('');
+    const [bankClass, setBankClass] = useState('')
+    const [cbu, setCbu] = useState(0) 
+    const [province, setProvince] = useState('');
+    const [city, setCity] = useState('');
+    const [zipCode, setZipCode] = useState(0);
+    const [direction, setDirection] = useState('');
+
 
 
     const onChange = () => {
@@ -30,23 +34,26 @@ const Register = () => {
     return (
         <div>
 
-            {/* 
-
-            tipo de empleado (select)
-            nombre
-            apellido
-            mail
-            dni
-            numero de telefono           
-            localidad
-            direccion
-            nivel educativo (select)
-            fecha de nacimiento
-            input para subir el cv
-            codigo postal
-
-            */}
             <div>
+                <h1 className='margin-top-form text-center'>Ingrese sus datos</h1>
+                <hr/>
+                <form >
+                    <h2>Usuario</h2>
+                    <div className="form-group">
+                        <label for="exampleInputPassword1">Email</label>
+                        <input type="text
+                        " className="form-control" id="exampleInputPassword1" placeholder="Email" />
+                    </div>
+
+
+                    <div className="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="text
+                        " className="form-control" id="exampleInputPassword1" placeholder="Contraseña" />
+                    </div>
+
+
+                </form>
                 <form>
                     <h2>Datos personales</h2>
                     <div className="form-group">
@@ -60,17 +67,6 @@ const Register = () => {
                         " className="form-control" id="exampleInputPassword1" placeholder="Apellido" />
                     </div>
 
-                    <div className="form-group">
-                        <label for="exampleInputPassword1">Email</label>
-                        <input type="text
-                        " className="form-control" id="exampleInputPassword1" placeholder="Email" />
-                    </div>
-                    
-                    <div className="form-group">
-                        <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="text
-                        " className="form-control" id="exampleInputPassword1" placeholder="Contraseña" />
-                    </div>
 
                     <div className="form-group">
                         <label for="exampleInputPassword1">Telefono</label>
@@ -150,23 +146,31 @@ const Register = () => {
                 <form>
                     <h2>Información adicional</h2>
 
-                    {/* otro select */}
-                    <div className="form-group">
-                        <label for="exampleInputEmail1">Nombre</label>
-                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre" />
-                    </div>
+                    {/*  nivel educativootro select */}
+                    <select className="form-select select-width" aria-label="Default select example">
+                        <option selected>...</option>
+                        <option value="1">Secundario Incompleto</option>
+                        <option value="2">Secundario Completo</option>
+                        <option value="3">Terciario</option>
+                        <option value="4">Universitario Incompleto</option>
+                        <option value="5">Universitario Completo</option>
+                    </select>
+
                     {/* experiencia laboral */}
                     <div className="form-group">
-                        <label for="exampleInputPassword1">Apellido</label>
+                        <label for="exampleInputPassword1">Experiencia Laboral</label>
                         <input type="text
-                        " className="form-control" id="exampleInputPassword1" placeholder="Apellido" />
+                        " className="form-control" id="exampleInputPassword1" placeholder="Experiencia Laboral" />
                     </div>
                     {/* cargar un archivo */}
+                    <input type="file" />
 
-                    <button type="submit" className="btn btn-danger">Submit</button>
-                    <Link to='/'><a> Volver atrás </a></Link>
+                    <hr/>
 
+                    <button type="submit" className="btn btn-danger">Submit</button>                   
+                    <hr/>
                 </form>
+                <Link to='/'><a> Volver atrás </a></Link>
             </div>
 
         </div>
