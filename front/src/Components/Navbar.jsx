@@ -15,6 +15,7 @@ const Navbar = () => {
                                 </div>
                                 <Link  to='/'className="navbar-brand">Bienvenido empleado </Link>
                                 <Link to='directoraccount'className="navbar-brand" >Director account </Link>
+                                
                             </div>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
                                 aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +44,7 @@ const Navbar = () => {
                                             </p>
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                            <a className="dropdown-item" href="#">Mi perfil</a>
+                                            <Link className="dropdown-item" to='/user'>Mi perfil</Link>
                                             <a className="dropdown-item" href="#">Notificaciones</a>
                                             <a className="dropdown-item" href="#">Salir</a>
                                         </div>

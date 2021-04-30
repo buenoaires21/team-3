@@ -1,10 +1,15 @@
 import React from 'react'
+import DirectorAccount from './DirectorAccount'
+
 
 const Tabla = () => {
     return (
         <div>
-            <table class="table">
-                <thead class="thead-dark">
+           
+            <DirectorAccount/>
+            <table className="table take-to-the-top mr-5">
+            <h2 className='text-center'>Empleados</h2>
+                <thead className="thead-dark">
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Nombre</th>
@@ -34,8 +39,8 @@ const Tabla = () => {
                 </tbody>
             </table>
 
-            <table class="table">
-                <thead class="thead-light">
+            <table className="table">
+                <thead className="thead-light">
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">First</th>

@@ -1,14 +1,15 @@
 import React from 'react'
-import EmployeeAccount from './EmployeeAccount'
+import DirectorAccount from './DirectorAccount'
 
-const Projects = () => {
+
+const Tabla = () => {
     return (
         <div>
-            <EmployeeAccount/>
-            <table className="table take-to-the-top mr-5">
-                
-            <h2 className='text-center'>Santiago</h2>
            
+            <DirectorAccount/>
+            
+            <table className="table take-to-the-top mr-5">
+            <h2 className='text-center'>Proyecto 1</h2>
                 <thead className="thead-dark">
                     <tr>
                         <th scope="col">#</th>
@@ -40,7 +41,7 @@ const Projects = () => {
             </table>
 
             <table className="table">
-            <h2 className='text-center'>Añatuya</h2>
+            <h2 className='text-center'>Proyecto 2</h2>
                 <thead className="thead-light">
                     <tr>
                         <th scope="col">#</th>
@@ -111,7 +112,7 @@ const Projects = () => {
                 </tbody>
             </table>
             <table className="table">
-            <h2 className='text-center'>Monte Quemado</h2>
+            <h2 className='text-center'>Proyecto 3</h2>
                 <thead className="thead-light">
                     <tr>
                         <th scope="col">#</th>
@@ -180,9 +181,9 @@ const Projects = () => {
                         <td>@twitter</td>
                     </tr>
                 </tbody>
-                </table>
+            </table>
         </div>
     )
 }
 
-export default Projects
+export default Tabla

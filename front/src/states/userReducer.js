@@ -9,7 +9,7 @@ import axios from "axios";
 export const postData = createAsyncThunk(
     "CREATE_USER",
     ({ mail, password, name, lastName, dni, cuil, bankName, phone, selectRegion, bankClass, cbu, province, city, zipCode, direction, workExperience, education }) => {
-        return axios.post(`http://localhost:3000/user`, {
+        return axios.post("localhost:3000", {
             mail: mail,
             password: password,
             name: name,

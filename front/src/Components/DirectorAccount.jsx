@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FiCheck } from "react-icons/fi";
-import { BiWorld, BiBriefcase, BiBarChartAlt } from "react-icons/bi";
-import Tabla from './Tabla'
+import { BiWorld, BiBriefcase, BiBarChartAlt, BiGlobe } from "react-icons/bi";
+
 
 
 const DirectorAccount = () => {
@@ -28,19 +28,25 @@ const DirectorAccount = () => {
                             <li className="active ">
                                 <a href="javascript:;">
                                     <FiCheck />
-                                    <p>Confirmar asistencias</p>
+                                    <Link to='asistencia'><p>Confirmar asistencias</p></Link>
+                                </a>
+                            </li>
+                            <li className="active ">
+                                <a href="javascript:;">
+                                    <BiGlobe />
+                                    <Link to='tabla'><p>Ver todos</p></Link>
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:;">
                                     <BiWorld />
-                                    <p>Compañeros regionales</p>
+                                    <Link to='tabla2'><p>Compañeros regionales</p></Link>
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:;">
                                     <BiBriefcase />
-                                    <p>Compañeros por proyecto</p>
+                                    <Link to='tabla3'><p>Compañeros por proyecto</p></Link>
                                 </a>
                             </li>
                             <li>
@@ -53,10 +59,6 @@ const DirectorAccount = () => {
                     </div>
                 </div>
                 <div className="main-panel" >
-
-                <Tabla/>
-
-
                 </div>
             </div>
         </div>

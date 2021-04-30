@@ -11,14 +11,14 @@ const Login = () => {
     const password = useInput('password')
 
     const handleLogin = (e) =>{
-/*         dispatch(postLogin({
+ /*       dispatch(postLogin({
             mail: mail.value,
             password: password.value
-        })) */
+        }))  */
     }
 
     return (
-        <div>
+        <div className='container'>
 
             <form onSubmit={handleLogin} className='margin-top-form'>
                 <div className="form-group ">

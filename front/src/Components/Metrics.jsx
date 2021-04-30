@@ -1,30 +1,50 @@
 import React from 'react'
 import DirectorAccount from './DirectorAccount'
+import { Bar } from 'react-chartjs-2'
 
 const Metrics = () => {
 
     const data = {
-        labels: ['Santiago del estero', 'Buenos Aires', 'Chaco'],
-        datasets: [{
-            label: 'Ausentes',
-            backgroundColor: 'rgba(0,255,0,0,2)',
-            borderColor: 'black',
-            borderWidth: 1,
-            hoverBackgroundColor: 'rgba(0,255,0,0,2)',
-            hoverBorderColor: '#FFFF00',
-            data: [12, 3, 4, 0] //Acá van contadores de ausentes
-        }]
-    }
-    const opciones = {
-        maintainAspectRatio: false,
-        responsive: true
-    }
+        labels: ['Santiago', 'Añatuya', 'Monte Quemado'],
+        datasets: [
+            {
+                label: 'Ausentes por region',
+                data: [12, 19, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                ],
+                borderWidth: 1,
+            },
+        ],
+    };
+
+    const options = {
+        scales: {
+            yAxes: [
+                {
+                    ticks: {
+                        beginAtZero: true,
+                    },
+                },
+            ],
+        },
+    };
 
     return (
-        <div className='App' style={{ width: '100%', height: '500%' }}>
-            <DirectorAccount/>
+        <div className='take-to-the-top' style={{ width: '100%' }}>
+            <DirectorAccount />
+            <h2 className='text-center'>Ausentes por región</h2>
 
-            <h2>Ausentes por región</h2>
+            <Bar data={data} options={options} />
+
+
         </div>
     )
 }
