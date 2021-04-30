@@ -12,8 +12,8 @@ const Login = () => {
 
     const handleLogin = (e) =>{
 /*         dispatch(postLogin({
-            mail: mail,
-            password: password
+            mail: mail.value,
+            password: password.value
         })) */
     }
 
@@ -36,7 +36,7 @@ const Login = () => {
                     type="password" className="form-control" id="exampleInputPassword1" placeholder="Escribe tu contraseña" />
                 </div>
 
-                <button type="submit" className="btn btn-danger mt-2 mb-3">Submit</button>
+                <button type="submit" className="btn btn-danger mt-2 mb-3">Loguearse</button>
             </form>
 
         </div>

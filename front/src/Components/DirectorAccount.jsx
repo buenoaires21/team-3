@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FiCheck } from "react-icons/fi";
 import { BiWorld, BiBriefcase, BiBarChartAlt } from "react-icons/bi";
-
+import Tabla from './Tabla'
+import Metrics from './Metrics'
 
 const DirectorAccount = () => {
 
@@ -53,14 +54,8 @@ const DirectorAccount = () => {
                 </div>
                 <div className="main-panel" >
 
-
-                    <div className="content">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <h3 className="description">Your content here</h3>
-                            </div>
-                        </div>
-                    </div>
+                <Tabla/>
+                <Metrics/>
 
                 </div>
             </div>

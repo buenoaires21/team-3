@@ -29,26 +29,27 @@ const Register = () => {
         e.preventDefault();
         dispatch(
             postData({
-                mail: mail,
-                password: password,
-                name: name,
-                lastName: lastName,
-                dni: dni,
-                phone: phone,
-                selectRegion: selectRegion,
-                cuil: cuil,
-                bankName: bankName,
-                bankClass: bankClass,
-                cbu: cbu,
-                province: province,
-                city: city,
-                zipCode: zipCode,
-                direction: direction,
-                education: education,
-                workExperience: workExperience
+                mail: mail.value,
+                password: password.value,
+                name: name.value,
+                lastName: lastName.value,
+                dni: dni.value,
+                phone: phone.value,
+                selectRegion: selectRegion.value,
+                cuil: cuil.value,
+                bankName: bankName.value,
+                bankClass: bankClass.value,
+                cbu: cbu.value,
+                province: province.value,
+                city: city.value,
+                zipCode: zipCode.value,
+                direction: direction.value,
+                education: education.value,
+                workExperience: workExperience.value
             })
         );
     }
+
 
     return (
         <div>
@@ -196,11 +197,11 @@ const Register = () => {
                     {/*  nivel educativootro select */}
                     <select {...education}className="form-select select-width" aria-label="Default select example">
                         <option selected>...</option>
-                        <option value="1">Secundario Incompleto</option>
-                        <option value="2">Secundario Completo</option>
-                        <option value="3">Terciario</option>
-                        <option value="4">Universitario Incompleto</option>
-                        <option value="5">Universitario Completo</option>
+                        <option >Secundario Incompleto</option>
+                        <option >Secundario Completo</option>
+                        <option >Terciario</option>
+                        <option >Universitario Incompleto</option>
+                        <option >Universitario Completo</option>
                     </select>
 
                     {/* experiencia laboral */}
@@ -216,7 +217,7 @@ const Register = () => {
 
                     <hr />
 
-                    <button type="submit" className="btn btn-danger">Submit</button>
+                    <button type="submit" className="btn btn-danger">Confirmar Registro</button>
                     <hr />
                 </form>
                 <Link to='/'><a> Volver atrás </a></Link>

@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="row">
 
 
-                    <div className="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <div className="col-lg-6 col-md-6 mb-6 mb-md-0">
                         <h5 className="text-uppercase">CONOCENOS</h5>
 
                         <ul className="list-unstyled mb-0">
@@ -28,7 +28,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div className="col-lg-6 col-md-6 mb-4 mb-md-0">
                         <h5 className="text-uppercase mb-0">CONTACTANOS</h5>
 
                         <ul className="list-unstyled">
