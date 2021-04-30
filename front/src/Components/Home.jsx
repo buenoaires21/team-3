@@ -1,15 +1,15 @@
 import React from 'react'
 import Login from './Login'
 import { Link } from 'react-router-dom'
-
-
+import logoHaciendoCamino from '../assets/logo-haciendo-camino.png'
 const Home = () => {
     return (
-        <div>
+        <div className='home'>
+            <img src={logoHaciendoCamino} className='img-fluid'/>
             <Login/>
             
-            <Link to='/register'><button type="button" class="btn btn-primary">
-                Quiero registrarme</button>
+            <Link to='/register'><a >
+                Quiero registrarme</a>
             </Link>
         </div>
     )
