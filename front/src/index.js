@@ -8,12 +8,12 @@ import "../node_modules/bootstrap/scss/bootstrap.scss";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 ReactDOM.render(
-  <>
+  <React.StrictMode>
 
     <BrowserRouter>
-      <Route path="/" component={App} />
+      <App />
     </BrowserRouter>
-  </>,
+  </React.StrictMode>,
 
   document.getElementById('root')
 );

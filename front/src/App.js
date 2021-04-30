@@ -1,24 +1,30 @@
 import React, {useState} from 'react'
-import Login from './Components/Login'
-import { Link, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import Register from './Components/Register'
-
+import Home from './Components/Home'
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
+import Tabla from './Components/Tabla'
 
 function App() {
 
   return (
-
+    <> 
+     < Navbar/>
+    
     <div className="container">
-      
-      <Route exact path="/" component={Login}> </Route>
-      <Route exact path="/register" component={Register}> </Route>
-      <hr/>
-      <Link to='/register'><button type="button" class="btn btn-primary">
-        Quiero registrarme</button>
-      </Link>
 
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/register" component={Register}/>
+      {/* <Route exact path="/projects" component={Register}> </Route>
+      <Route exact path="/localidad" component={Register}> </Route>
+      <Route exact path="/provincias" component={Register}> </Route>
+      <Route exact path="/admin" component={Register}> </Route> */}
 
     </div>
+    {/* <Tabla/> */}
+    < Footer/>
+    </>
   );
 }
 

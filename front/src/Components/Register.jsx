@@ -1,7 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 
 const Register = () => {
+    const [nombre, setNombre] = useState ('');
+    const [apellido, setApellido] = useState ('')
+    const [mail, setMail] = useState ('')
+    const [dni, setDni] = useState (0)
+    const [telefono, setTelefono] = useState (0)
+    const [localidad, setLocalidad] = useState ('')
+    const [direccion, setDireccion] = useState ('')
+    const [nivelEducativo, setNivelEducativo] = useState ('')
+    const [fechaDeNacimiento, setfechaDeNacimiento] = useState ('');
+    const [codigoPostal, setCodigoPostal] = useState ('')
 
+    const onChange = () => {
+
+    }
+
+    const onClick = () => {
+
+    }
+    
+    const onSubmit = () => {
+
+    }
 
     return (
         <div>
