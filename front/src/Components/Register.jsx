@@ -29,8 +29,7 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.post("alta.php", { name: name.value })
-       /*  dispatch(
+       dispatch(
             postData({
                 mail: mail.value,
                 password: password.value,
@@ -50,11 +49,11 @@ const Register = () => {
                 education: education.value,
                 workExperience: workExperience.value
             })
-        ); */
+        ); 
     }
 
     return (
-        <div>
+        <div className='container'>
 
             <form onSubmit={handleSubmit} >
                 <h1 className='margin-top-form text-center'>Ingrese sus datos</h1>
@@ -154,12 +153,15 @@ const Register = () => {
                 <div>
                     <h2>Información Regional</h2>
                     {/* select */}
+                    <div className="form-group">
+                    <label for="exampleInputPassword1">Región</label>
                     <select {...selectRegion} className="form-select select-width" aria-label="Default select example">
                         <option selected>...</option>
                         <option value="1">Santiago</option>
                         <option value="2">Añatuya</option>
                         <option value="3">Monte Quemado</option>
                     </select>
+                    </div>
 
                     <div className="form-group">
                         <label for="exampleInputPassword1">Provincia</label>
@@ -196,7 +198,8 @@ const Register = () => {
                 <div>
                     <h2>Información adicional</h2>
 
-                    {/*  nivel educativootro select */}
+                    <div className="form-group">
+                    <label for="exampleInputPassword1">Educación</label>
                     <select {...education} className="form-select select-width" aria-label="Default select example">
                         <option selected>...</option>
                         <option >Secundario Incompleto</option>
@@ -205,8 +208,8 @@ const Register = () => {
                         <option >Universitario Incompleto</option>
                         <option >Universitario Completo</option>
                     </select>
+                    </div>
 
-                    {/* experiencia laboral */}
                     <div className="form-group">
                         <label for="exampleInputPassword1">Experiencia Laboral</label>
                         <input
@@ -214,7 +217,7 @@ const Register = () => {
                             type="text
                         " className="form-control" id="exampleInputPassword1" placeholder="Experiencia Laboral" />
                     </div>
-                    {/* cargar un archivo */}
+ 
                     <input type="file" />
 
                     <hr />

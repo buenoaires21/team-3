@@ -59,7 +59,7 @@ const Asistencia = () => {
                                     <td>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3" />
-                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                            <label class="custom-control-label" for="customCheck3">4</label>
                                         </div>
                                     </td>
                                     <td>Bootstrap Flexbox Tutorial and Examples</td>
@@ -71,7 +71,7 @@ const Asistencia = () => {
                                     <td>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3" />
-                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                            <label class="custom-control-label" for="customCheck3">5</label>
                                         </div>
                                     </td>
                                     <td>Bootstrap Flexbox Tutorial and Examples</td>
@@ -83,7 +83,7 @@ const Asistencia = () => {
                                     <td>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3" />
-                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                            <label class="custom-control-label" for="customCheck3">6</label>
                                         </div>
                                     </td>
                                     <td>Bootstrap Flexbox Tutorial and Examples</td>
@@ -95,7 +95,7 @@ const Asistencia = () => {
                                     <td>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3" />
-                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                            <label class="custom-control-label" for="customCheck3">7</label>
                                         </div>
                                     </td>
                                     <td>Bootstrap Flexbox Tutorial and Examples</td>
@@ -107,7 +107,7 @@ const Asistencia = () => {
                                     <td>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3" />
-                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                            <label class="custom-control-label" for="customCheck3">8</label>
                                         </div>
                                     </td>
                                     <td>Bootstrap Flexbox Tutorial and Examples</td>
@@ -119,7 +119,7 @@ const Asistencia = () => {
                                     <td>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3" />
-                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                            <label class="custom-control-label" for="customCheck3">9</label>
                                         </div>
                                     </td>
                                     <td>Bootstrap Flexbox Tutorial and Examples</td>
@@ -131,7 +131,7 @@ const Asistencia = () => {
                                     <td>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3" />
-                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                            <label class="custom-control-label" for="customCheck3">10</label>
                                         </div>
                                     </td>
                                     <td>Bootstrap Flexbox Tutorial and Examples</td>
@@ -143,7 +143,7 @@ const Asistencia = () => {
                                     <td>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3" />
-                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                            <label class="custom-control-label" for="customCheck3">11</label>
                                         </div>
                                     </td>
                                     <td>Bootstrap Flexbox Tutorial and Examples</td>
@@ -155,7 +155,7 @@ const Asistencia = () => {
                                     <td>
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck3" />
-                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                            <label class="custom-control-label" for="customCheck3">12</label>
                                         </div>
                                     </td>
                                     <td>Bootstrap Flexbox Tutorial and Examples</td>

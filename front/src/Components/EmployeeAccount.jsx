@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FiCheck } from "react-icons/fi";
 import { BiWorld, BiBriefcase, BiBarChartAlt } from "react-icons/bi";
 
 
@@ -30,16 +29,16 @@ const EmployeeAccount = () => {
                             <li className="active ">
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <Link to='user'>
                                     <BiWorld />
-                                    <p>Compañeros regionales</p>
-                                </a>
+                                    <p>Mis datos</p>
+                                </Link>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <Link to='projects'>
                                     <BiBriefcase />
-                                    <p>Compañeros por proyecto</p>
-                                </a>
+                                    <p>Mis proyectos</p>
+                                </Link>
                             </li>
                         </ul>
                     </div>

@@ -8,7 +8,7 @@ const Tabla = () => {
            
             <DirectorAccount/>
             
-            <table className="table take-to-the-top">
+            <table className="table take-to-the-top mr-5">
             <h2 className='text-center'>Proyecto 1</h2>
                 <thead className="thead-dark">
                     <tr>
