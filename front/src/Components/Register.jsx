@@ -223,6 +223,7 @@ const Register = () => {
                 </div>
                 <button type="submit" className="btn btn-danger">Confirmar Registro
                     </button>
+                <hr/>
                 <Link to='/'><a> Volver atrás </a></Link>
             </form>
 

@@ -6,6 +6,12 @@ import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import DirectorAccount from './Components/DirectorAccount'
 import Metrics from './Components/Metrics'
+import Tabla from './Components/Tabla'
+import Tabla2 from './Components/Tabla2'
+import Tabla3 from './Components/Tabla3'
+import Asistencia from './Components/Asistencia'
+import EmployeeAccount from './Components/EmployeeAccount'
+
 
 function App() {
 
@@ -18,8 +24,13 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route exact path="/register" component={Register}/>
       <Route exact path="/directoraccount" component={DirectorAccount}/>
+      <Route exact path="/user" component={EmployeeAccount}/>
       <Route exact path="/metrics" component={Metrics}/>
-
+      <Route exact path="/metrics" component={Metrics}/>
+      <Route exact path="/tabla" component={Tabla}/>
+      <Route exact path="/tabla2" component={Tabla2}/>
+      <Route exact path="/tabla3" component={Tabla3}/>
+      <Route exact path="/asistencia" component={Asistencia}/>
 
     </div>
     {/* <Tabla/> */}
