@@ -5,28 +5,33 @@ import {
 } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const setUser = createAction('SET_USER')
 
 export const postData = createAsyncThunk(
     "CREATE_USER",
-    ({ name, lastname, email, phone, amount, time, dni, province, creditCard, typeCard }) => {
-        return axios.post(`https://proyectotecho.herokuapp.com/api/user`, {
-            name,
-            lastname,
-            email,
-            phone,
-            amount,
-            time,
-            dni,
-            province,
-            creditCard,
-            typeCard,
+    ({ mail, password, name, lastName, dni, cuil, bankName, phone, selectRegion, bankClass, cbu, province, city, zipCode, direction, workExperience, education }) => {
+        return axios.post(`http://localhost:3000/user`, {
+            mail: mail,
+            password: password,
+            name: name,
+            lastName: lastName,
+            dni: dni,
+            phone: phone,
+            selectRegion: selectRegion,
+            cuil: cuil,
+            bankName: bankName,
+            bankClass: bankClass,
+            cbu: cbu,
+            province: province,
+            city: city,
+            zipCode: zipCode,
+            direction: direction,
+            education: education,
+            workExperience: workExperience
         })
     }
 );
 
 const userReducer = createReducer([], {
-    [setUser]: (state, action) => action.payload,
     [postData.fulfilled]: (state, action) => action.payload,
 
 });

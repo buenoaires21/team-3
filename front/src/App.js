@@ -4,22 +4,19 @@ import Register from './Components/Register'
 import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
-import Tabla from './Components/Tabla'
+import DirectorAccount from './Components/DirectorAccount'
 
 function App() {
 
   return (
     <> 
-     < Navbar/>
+     < Navbar className='mb-5'/>
     
     <div className="container font-page">
 
       <Route exact path="/" component={Home}/>
       <Route exact path="/register" component={Register}/>
-      {/* <Route exact path="/projects" component={Register}> </Route>
-      <Route exact path="/localidad" component={Register}> </Route>
-      <Route exact path="/provincias" component={Register}> </Route>
-      <Route exact path="/admin" component={Register}> </Route> */}
+      <Route exact path="/directoraccount" component={DirectorAccount}/>
 
     </div>
     {/* <Tabla/> */}

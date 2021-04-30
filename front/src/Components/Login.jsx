@@ -1,21 +1,39 @@
 import React from 'react'
+import { useDispatch } from "react-redux";
+import { postData } from '../states/userReducer'
+import { useInput } from '../utils/useInput'
+
 
 const Login = () => {
+    const dispatch = useDispatch();
 
+    const mail = useInput('name')
+    const password = useInput('password')
+
+    const handleLogin = (e) =>{
+/*         dispatch(postLogin({
+            mail: mail,
+            password: password
+        })) */
+    }
 
     return (
         <div>
 
-            <form className='margin-top-form'>
+            <form onSubmit={handleLogin} className='margin-top-form'>
                 <div className="form-group ">
                     <label for="exampleInputEmail1">Tu Email</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email" />
+                    <input 
+                    {...mail}
+                    type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email" />
                     <small id="emailHelp" className="form-text text-muted">Tus datos son privados</small>
                 </div>
 
                 <div className="form-group">
                     <label for="exampleInputPassword1">Tu contraseña</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Escribe tu contraseña" />
+                    <input 
+                    {...password}
+                    type="password" className="form-control" id="exampleInputPassword1" placeholder="Escribe tu contraseña" />
                 </div>
 
                 <button type="submit" className="btn btn-danger mt-2 mb-3">Submit</button>
