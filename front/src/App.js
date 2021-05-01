@@ -12,7 +12,7 @@ import Tabla3 from './Components/Tabla3'
 import Asistencia from './Components/Asistencia'
 import EmployeeAccount from './Components/EmployeeAccount'
 import Projects from './Components/Projects'
-
+import MisDatos from './Components/MisDatos'
 
 function App() {
 
@@ -33,6 +33,7 @@ function App() {
       <Route exact path="/tabla3" component={Tabla3}/>
       <Route exact path="/asistencia" component={Asistencia}/>
       <Route exact path="/projects" component={Projects}/>
+      <Route exact path="/misdatos" component={MisDatos}/>
 
     </div>
     {/* <Tabla/> */}
