@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BiWorld, BiBriefcase, BiBarChartAlt } from "react-icons/bi";
-
+import MisDatos from './MisDatos'
 
 
 const EmployeeAccount = () => {
@@ -29,7 +29,7 @@ const EmployeeAccount = () => {
                             <li className="active ">
                             </li>
                             <li>
-                                <Link to='user'>
+                                <Link to='misdatos'>
                                     <BiWorld />
                                     <p>Mis datos</p>
                                 </Link>
